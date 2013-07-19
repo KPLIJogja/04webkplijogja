@@ -1,0 +1,187 @@
+/*
+   CSS-Tricks Example
+   by Chris Coyier
+   http://css-tricks.com
+   costume by tuanpembual.wp.com
+*/
+
+@charset "utf-8";
+
+* { margin: 0; padding: 0; }
+body { font: 12px Verdana, Geneva, sans-serif; background: #D9A704; }
+
+article, aside, figure, footer, header, hgroup,
+menu, nav, section { display: block; }
+
+h2 { font: 24px Georgia; margin: 0 0 10px 0; }
+h3 { margin: 0 0 8px 0; color: #00A9FF;}
+p { margin: 0 0 20px 0; text-align: justify; color: #666;}
+
+#fluid-wrap {
+  width: 72%; 
+  margin: 35px auto 15px;
+  padding: 3em;
+  background: #fff;
+  overflow: hidden;
+  -webkit-border-radius: 20px; 
+  -moz-border-radius: 20px; 
+  -moz-box-shadow: -5px -5px #BFC1B5;  
+  -moz-box-shadow: 0 0 5px #BFC1B5; 
+  -webkit-box-shadow: 0 0 5px #BFC1B5; 
+  box-shadow: 0 0 15px #BFC1B5;
+}
+
+#sidebar {
+  width: 30%;
+  float: right;
+}
+
+#bottom ul, #sidebar ul {
+  list-style: none;
+}
+
+#sidebar ul li a {
+  color: #DE561A;
+  text-decoration: none;
+  padding: 3px 0; 
+  display: block;
+}
+
+#bottom {
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+#bottom ul li a{
+  color: #ffffff;
+  float: left;
+  text-decoration: none;
+  padding: 12px;
+}
+
+@media all and (min-width: 1001px) {
+  #sidebar img{
+  width:100%;
+  height:auto
+  }
+}
+
+@media all and (max-width: 1000px) and (min-width: 700px) {
+  #sidebar img{
+  width:100%;
+  height:auto
+  }
+}
+
+@media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+  #sidebar img{
+  width:100%;
+  height:auto
+  }
+}
+
+@media all and (max-width: 519px) and (min-width: 0px){
+  #sidebar img{
+  width:100%;
+  height:auto
+  }
+}
+
+#main-content {
+  width: 60%;
+  float: right;
+  color: #ffffff;
+}
+/* SOCIAL MEDIA ICONS
+----------------------- */
+a.mail {
+  background:transparent url(images/social-media.png) 0px 0px no-repeat;
+  display:block; 
+  float:left;  
+  margin-left:10px;
+  text-indent:-9999px; 
+  width: 220px; 
+  height:37px;
+}
+a:hover.mail { 
+  background:transparent url(images/social-media.png) 0px -38px no-repeat; 
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition:none;
+}
+a.facebook{
+  background:transparent url(images/social-icon.png) 0px 0 no-repeat;
+  display:block; 
+  float:left; 
+  margin-left:10px;
+  text-indent:-9999px; 
+  width: 37px; 
+  height:37px;
+}
+a:hover.facebook{
+  background:transparent url(images/social-icon.png) 0px -39px no-repeat; 
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition:none;
+}
+a.twitter{
+  background:transparent url(images/social-icon.png) -37px 0px no-repeat;
+  display:block; 
+  float:left;
+  text-indent:-9999px; 
+  width: 37px; 
+  height:37px;
+}
+a:hover.twitter{
+  background:transparent url(images/social-icon.png) -37px -38px no-repeat; 
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition:none;
+}
+a.gplus{
+  background:transparent url(images/social-icon.png) -76px 0 no-repeat;
+  display:block; 
+  float:left;
+  margin-left:3px; 
+  text-indent:-9999px; 
+  width: 37px; 
+  height:37px;
+}
+a:hover.gplus{
+  background:transparent url(images/social-icon.png) -76px -38px no-repeat; 
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition:none;
+}
+a.milis{
+  background:transparent url(images/social-icon.png) -112px 0 no-repeat;
+  display:block; 
+  float:left;
+  margin-left:3px; 
+  text-indent:-9999px; 
+  width: 37px; 
+  height:37px;
+}
+a:hover.milis{
+  background:transparent url(images/social-icon.png) -112px -38px no-repeat; 
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition:none;
+}
+a.malioboro{
+  background:transparent url(images/malioboro-icon.png) 0px 0px no-repeat;
+  display:block; 
+  float:left;
+  margin-left:10px; 
+  text-indent:-9999px; 
+  width: 72px; 
+  height:72px;
+}
+a:hover.malioboro{
+  background:transparent url(images/malioboro-icon.png) 0px 0px no-repeat; 
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition:none;
+}
